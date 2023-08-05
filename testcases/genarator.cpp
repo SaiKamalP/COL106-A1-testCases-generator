@@ -57,8 +57,8 @@ int main() {
     cout.flush();
     cin>>numfiles;
     cout<<endl;
-    vector<int> distbution={ 20,       20,       10,      10,    10,   10,   10,    10};
-                        // insert   delete   bel-to   unio     inter   sz  diff  sdiff 
+    vector<int> distbution={ 20,       20,       10,      10,    10,   5,   10,    10,      5};
+                        // insert   delete   bel-to   unio     inter   sz  diff  sdiff   print
     for(int k=1;k<=numfiles;k++){
         cout<<"creating test-"<<k<<".txt"<<endl;
         ofstream fout("test-"+to_string(k)+".txt");
@@ -81,14 +81,7 @@ int main() {
                     fout<<"9 "<<sid<<endl;
                     break;
                 case 2:
-                    sid=-1;
-                    if(prob(probabilityToIncreaseSetNumber)){
-                        if(csetNum<setNumMax){
-                            csetNum++;
-                            sid=csetNum;
-                        }
-                    }
-                    sid=(sid==-1?gRand(0,csetNum):sid);
+                    sid=gRand(0,csetNum);
                     value=gRand(-maxValue,maxValue);
 
                     fout<<"9 "<<sid<<endl;
@@ -96,14 +89,7 @@ int main() {
                     fout<<"9 "<<sid<<endl;
                     break;
                 case 3:
-                    sid=-1;
-                    if(prob(probabilityToIncreaseSetNumber)){
-                        if(csetNum<setNumMax){
-                            csetNum++;
-                            sid=csetNum;
-                        }
-                    }
-                    sid=(sid==-1?gRand(0,csetNum):sid);
+                    sid=gRand(0,csetNum);
                     value=gRand(-maxValue,maxValue);
 
                     fout<<"9 "<<sid<<endl;
@@ -190,6 +176,8 @@ int main() {
                     fout<<"9 "<<sid<<endl;
                     fout<<"9 "<<value<<endl;
                     break;
+                case 9:
+                    fout<<"9 "<<gRand(0,setNumMax)<<endl;
             }
 
             
