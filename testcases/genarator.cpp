@@ -32,7 +32,6 @@ int main() {
 
     int numCommands=1000;
     int setNumMax=20;
-    int csetNum=0;
     int probabilityToIncreaseSetNumber=10;
     int sid,value,sid1,sid2;
     int maxValue=50;
@@ -60,6 +59,7 @@ int main() {
     vector<int> distbution={ 20,       20,       10,      10,    10,   5,   10,    10,      5};
                         // insert   delete   bel-to   unio     inter   sz  diff  sdiff   print
     for(int k=1;k<=numfiles;k++){
+        int csetNum=0;
         cout<<"creating test-"<<k<<".txt"<<endl;
         ofstream fout("test-"+to_string(k)+".txt");
         fout<<"1 0 1"<<endl;
