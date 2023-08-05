@@ -24,18 +24,18 @@ for Linux:
 
   you may just run the following command to see if your output differs from the expected output
   
-<code>./main < ./testcases/test-1.cpp | diff ./testcases/result-test-1.cpp - </code>
+<code>./main < ./testcases/test-1.txt | diff ./testcases/result-test-1.txt - </code>
 
   This command show nothing if output matches else it will show what is the difference.
 
   You may additionall want to redirect output to 'less' for better reading, in such case use
 
-  <code>./main < ./testcases/test-1.cpp | diff ./testcases/result-test-1.cpp - | less</code>
+  <code>./main < ./testcases/test-1.txt | diff ./testcases/result-test-1.txt - | less</code>
 
 for Windows/Linux:
   You can output the content to a file and manullly see the difference.
 
-  <code>./main < ./testcases/test-1.cpp > ./myoutput-test-1.txt</code>
+  <code>./main < ./testcases/test-1.txt > ./myoutput-test-1.txt</code>
 
 (If there is a better way to do this, fork this repo, update and do a pull request).
 
