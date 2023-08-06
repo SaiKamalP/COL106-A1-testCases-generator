@@ -81,7 +81,7 @@ int main() {
                     fout<<"9 "<<sid<<endl;
                     break;
                 case 2:
-                    sid=gRand(0,csetNum);
+                    sid=gRand(0,csetNum+3);
                     value=gRand(-maxValue,maxValue);
 
                     fout<<"9 "<<sid<<endl;
@@ -89,7 +89,7 @@ int main() {
                     fout<<"9 "<<sid<<endl;
                     break;
                 case 3:
-                    sid=gRand(0,csetNum);
+                    sid=gRand(0,csetNum+3);
                     value=gRand(-maxValue,maxValue);
 
                     fout<<"9 "<<sid<<endl;
