@@ -32,7 +32,7 @@ for Linux:
 
   <code>./main < ./testcases/test-1.txt | diff ./testcases/result-test-1.txt - | less</code>
 
-  The above code is for test-1 only. You may well do it for all tests you generate by compiling and executing the .
+  The above code is for test-1 only. You may well do it for all tests you generate by compiling and executing the checker.cpp
 
   Change the number of _**test cases**_ in "checker.cpp". <br>
   Compile and execute the checker.cpp file for automated differencing of the output and test files.
