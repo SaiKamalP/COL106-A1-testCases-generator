@@ -38,6 +38,17 @@ for Linux:
   Compile and execute the checker.cpp file for automated differencing of the output and test files.
 
 <hr>
+
+for Windows:
+
+  Change the number of test cases in "checker.cpp". <br>
+  Compile and run the exe file
+
+  <code>g++ checker.cpp -o checker.exe</code>
+
+  <code>checker.exe</code>
+
+<hr>
 for Windows:
 
   Change the number of test cases in "checker.cpp". <br>
