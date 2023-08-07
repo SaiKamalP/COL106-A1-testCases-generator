@@ -31,19 +31,35 @@ for Linux:
   You may additionall want to redirect output to 'less' for better reading, in such case use
 
   <code>./main < ./testcases/test-1.txt | diff ./testcases/result-test-1.txt - | less</code>
-<hr>
-for Windows/Linux:
-  You can output the content to a file and manullly see the difference.
 
-  <code>./main < ./testcases/test-1.txt > ./myoutput-test-1.txt</code>
+  The above code is for test-1 only. You may well do it for all tests you generate by compiling and executing the checker.cpp
 
-(If there is a better way to do this, fork this repo, update and do a pull request).
+  Change the number of _**test cases**_ in "checker.cpp". <br>
+  Compile and execute the checker.cpp file for automated differencing of the output and test files.
 
 <hr>
 
-The above code is for test-1 only. You may well do it for all tests you generate by executing commands one by one or by some automation code.
+for Windows:
 
-for example in c++ you may do a system("command") to execute a command, so you may loop over all test files you generated.
+  Change the number of test cases in "checker.cpp". <br>
+  Compile and run the exe file
+
+  <code>g++ checker.cpp -o checker.exe</code>
+
+  <code>checker.exe</code>
+
+<hr>
+for Windows:
+
+  Change the number of test cases in "checker.cpp". <br>
+  Compile and run the exe file
+
+  <code>g++ checker.cpp -o checker.exe</code>
+
+  <code>checker.exe</code>
+
+
+<hr>
 
 Try various combinations of generated files for better results.
 
