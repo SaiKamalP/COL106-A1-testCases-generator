@@ -32,12 +32,15 @@ for Linux:
 
   <code>./main < ./testcases/test-1.txt | diff ./testcases/result-test-1.txt - | less</code>
 <hr>
-for Windows/Linux:
-  You can output the content to a file and manullly see the difference.
+for Windows:
 
-  <code>./main < ./testcases/test-1.txt > ./myoutput-test-1.txt</code>
+  Change the number of test cases in "checker.cpp". <br>
+  Compile and run the exe file
 
-(If there is a better way to do this, fork this repo, update and do a pull request).
+  <code>g++ checker.cpp -o checker.exe</code>
+
+  <code>checker.exe</code>
+
 
 <hr>
 
